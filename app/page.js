@@ -18,7 +18,7 @@ const page = () => {
   useEffect(() => {
     fetchData()
   }, [])
-
+  
   return (
     <section className="flexStart flex-col paddings mb-16">
       <Categories

@@ -6,11 +6,10 @@ import { useSelector } from 'react-redux'
 const CartButtons = ({dish_id}) => {
     const {cartList } = useSelector((state) => state.cart);
 
-    const cartCount =useMemo(() => {
-        return cartList.find((item) => item?.disID === dish_id)?.count;
-    },[cartList])
+    const cartCount = cartList.find((item) => item?.disID === dish_id)?.count;
 
-  return (
+  
+      return (
    <>
       {cartCount > 0 ? <AfterCart cartCount={cartCount} dishId={dish_id}/> : <BeforeCart dishId={dish_id} />}
       <br />

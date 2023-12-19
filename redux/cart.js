@@ -9,7 +9,7 @@ const cartSlice = createSlice({
     initialState: INITIAL_STATE,
     reducers: {
         addToCart: (state, action) => {
-            const itemExist = state.cartList.find((item) => item.disID === action.payload);
+            const itemExist = state.cartList.find((item) => item?.disID === action.payload);
             if (itemExist) {
                 state.cartList.forEach((item) => {
                     if (item?.disID === action.payload) {
