@@ -27,7 +27,7 @@ const MenuItems = ({ dish_name, dish_image,dish_calories ,dish_description,dish_
                         </td>
                         <td className="p-4 md:w-1/4">
                             <div className="overflow-hidden">
-                                <Image src={dish_image ?? ""} className='h-48 w-96  object-cover sm:h-48 sm:w-96' width={300} height={300} alt='Picture of the author' />
+                                <Image src={dish_image ?? ""} className='h-48 w-96 object-cover' width={300} height={300} alt='Picture of the author' />
                             </div>
                         </td>
                     </tr>
