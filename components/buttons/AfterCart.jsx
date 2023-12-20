@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { increment, decrement } from '@/redux/cart'
+import { increment, decrement } from '@/public/hooks/redux/cart'
 
 const AfterCart = ({ cartCount, dishId }) => {
     const dispatch = useDispatch();

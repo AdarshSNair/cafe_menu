@@ -1,7 +1,7 @@
 import { Inter } from 'next/font/google'
 import NavBar from '@/components/Navbar'
 import './globals.css'
-import { StoreProvider } from '@/redux/StoreProvider'
+import { StoreProvider } from '@/public/hooks/redux/StoreProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 

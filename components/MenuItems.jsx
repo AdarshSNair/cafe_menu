@@ -1,8 +1,8 @@
 "use client"
 
 import Image from 'next/image'
-import { useSelector } from 'react-redux';
 import CartButtons from './buttons';
+import { CALORIES } from '@/public/constants/constants';
 
 const MenuItems = ({ dish_name, dish_image,dish_calories ,dish_description,dish_price,dish_currency,dish_id}) => {
     
@@ -23,7 +23,7 @@ const MenuItems = ({ dish_name, dish_image,dish_calories ,dish_description,dish_
                         <td className="hidden md:table-cell p-4">
                         </td>
                         <td className="p-4 md:w-1/4 font-semibold text-gray-900 dark:text-white text-base">
-                            {dish_calories ?? ""} Calories
+                            {dish_calories ?? ""} {CALORIES}
                         </td>
                         <td className="p-4 md:w-1/4">
                             <div className="overflow-hidden">

@@ -4,13 +4,14 @@ import Categories from '@/components/Categories'
 import MenuItems from '@/components/MenuItems'
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import { API_BASE_URL } from '@/public/constants/constants'
 
 const page = () => {
   const [cat, setCat] = useState("");
   const [products, setProducts] = useState([]);
 
   const fetchData = async () => {
-    const response = await axios.get("https://run.mocky.io/v3/5822e230-edcd-4328-b794-54018d0cf95e");
+    const response = await axios.get(API_BASE_URL);
     const [restaurant] = response?.data || []
     setProducts(restaurant?.table_menu_list);
   }
